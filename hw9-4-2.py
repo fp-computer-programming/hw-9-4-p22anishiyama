@@ -1,14 +1,9 @@
 # Author: ATN 1/14/22
 
-import enum
-
-
 def products(numbers, value):
     for i, v in enumerate(numbers):
-        try:
-            v * value
-        except:
-            return "An error occurred"
+        numbers[i] = v * value
+        v *= value
     return numbers
 
 
